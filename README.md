@@ -29,7 +29,7 @@ Whilst this may change in future, it presently offers a way to host HTML-based U
 
 ## Architecture
 
-LQHtml binds named controls and the controls of named components to the Angular root scope.
+LQHtml binds [named controls](https://q-syshelp.qsc.com/Content/Schematic_Library/external_control.htm) and the controls of [named components](https://training.qsc.com/mod/book/view.php?id=1178) to the Angular root scope.
 
 For example, you can display the contents of a Q-Sys text field using ng-bind:
 
