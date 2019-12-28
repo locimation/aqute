@@ -3,8 +3,6 @@
 LQHtml is a library for building AngularJS user interfaces that control QSC's Q-Sys cores.
 
 
-
-
 ## Getting Started
 
 To begin with, simply clone this repository:
@@ -21,8 +19,6 @@ You can now open http://localhost:1234/ in a browser and see the sample UCI.
 Edit `src/index.html`, `src/uci.js` and `src/uci.css` to suit your needs and UCI design.
 
 
-
-
 ## Deployment
 **Note:** Production deployment is currently a work-in-progress.
 
@@ -30,8 +26,6 @@ The intended behaviour is that you'll be able to run `npm build`, then copy the 
 
 Currently, it is possible to upload HTML files to the core's media directories and access them at http://&lt;core-ip&gt;/media/.
 Whilst this may change in future, it presently offers a way to host HTML-based UCI's on the core itself. 
-
-
 
 
 ## Architecture
@@ -52,8 +46,6 @@ This binding is bi-directional, so an HTML text-field will update the Q-Sys cont
 LQHtml also provides helper directives for bridging the logical gaps between Q-Sys controls and HTML entities.
 
 *These are a work in progress - documentation will follow as they develop.*
-
-
 
 
 ## Q-Sys Interaction
