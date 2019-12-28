@@ -1,0 +1,5 @@
+/* YOUR CSS HERE */
+
+/* Button styling example */
+button { background: #d3d3d3; }
+button.active { background: white; }

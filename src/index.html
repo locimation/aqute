@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My UCI</title>
+    <script src="../lib/lq.js"></script>
+    <script src="uci.js"></script>
+    <link rel="stylesheet" href="uci.css" />
+  </head>
+  <body>
+    <h1 ng-bind="Controls.text.String"></h1>
+    <button lq-active="Controls.led.Value">Click Me</button>
+    <input type="text" ng-model="Controls.text.String" />
+  </body>
+</html>
