@@ -43,7 +43,8 @@ This binding is bi-directional, so an HTML text-field will update the Q-Sys cont
 ```
 
 LQHtml also provides helper directives for bridging the logical gaps between Q-Sys controls and HTML entities.
-(These are a work in progress - documentation will follow as they develop.)
+
+*These are a work in progress - documentation will follow as they develop.*
 
 
 ## Q-Sys Interaction
@@ -54,4 +55,8 @@ Via this websocket, it uses QRC (Q-Sys Remote Control) protocol documented in th
 
 Specifically, it creates a change group for any controls and component controls used in the interface, then automatically polls this group.
 
-As such, only the **Control.Set**, **ChangeGroup.AddControl**, **ChangeGroup.AddComponentControl** and **ChangeGroup.AutoPoll** methods are used.
+As such, the only methods implemented are:
+- Control.Set
+- ChangeGroup.AddControl
+- ChangeGroup.AddComponentControl
+- ChangeGroup.AutoPoll
