@@ -19,11 +19,11 @@ Edit `src/index.html`, `src/uci.js` and `src/uci.css` to suit your needs and UCI
 
 
 ## Deployment
-*Note:* Production deployment is currently a work-in-progress.
+**Note:** Production deployment is currently a work-in-progress.
 
 The intended behaviour is that you'll be able to run `npm build`, then copy the resulting .html file to any webserver of your choice for public access.
 
-Currently, it is possible to upload HTML files to the core's media directories and access them at http://<core-ip/media/.
+Currently, it is possible to upload HTML files to the core's media directories and access them at http://&lt;core-ip&gt;/media/.
 Whilst this may change in future, it presently offers a way to host HTML-based UCI's on the core itself. 
 
 
@@ -48,10 +48,10 @@ LQHtml also provides helper directives for bridging the logical gaps between Q-S
 
 ## Q-Sys Interaction
 
-LQHtml connects to the core using the same websocket URL (http://<core-ip>/qrc) as the built-in HTML5 UCI Viewer.
+LQHtml connects to the core using the same websocket URL (http://&lt;core-ip&gt;/qrc) as the built-in HTML5 UCI Viewer.
 
 Via this websocket, it uses QRC (Q-Sys Remote Control) protocol documented in the [Q-Sys help file](https://q-syshelp.qsc.com/Content/External_Control/Q-Sys_Remote_Control/QRC.htm).
 
 Specifically, it creates a change group for any controls and component controls used in the interface, then automatically polls this group.
 
-As such, only the *Control.Set*, *ChangeGroup.AddControl*, *ChangeGroup.AddComponentControl* and *ChangeGroup.AutoPoll* methods are used.
+As such, only the **Control.Set**, **ChangeGroup.AddControl**, **ChangeGroup.AddComponentControl** and **ChangeGroup.AutoPoll** methods are used.
