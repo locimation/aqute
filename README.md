@@ -75,7 +75,21 @@ For example, to have the URL `/uci.html?room=foyer` access the `foyer` named com
 ```
 This allows many rooms to share a user interface.
 
-LQHtml also provides helper directives for bridging the logical gaps between Q-Sys controls and HTML entities. *These are a work in progress - documentation will follow as they develop.*
+### Button directives
+
+HTML buttons are typically stateless, so a number of helper functions are provided to allow the buttons to have momentary or toggle behaviour.
+
+These directives change a Q-Sys control's value between `0` and `1`, and apply an `active` css class if the value is 1.
+
+The included stylesheet (`src/uci.css`) sets buttons to be light gray by default, and white when the `active` class is present.
+
+```html
+<!-- Toggle button -->
+<button lq-toggle="Controls.my_button">Click Me</button>
+
+<!-- Momentary button -->
+<button lq-momentary="Controls.my_other_button">Click!</button>
+```
 
 
 ## Q-Sys Interaction
