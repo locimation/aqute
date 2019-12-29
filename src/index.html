@@ -9,9 +9,14 @@
   </head>
   <body>
     <h1 ng-bind="Controls.text.String"></h1>
-    <button lq-toggle="Controls.button">Click Me</button>
+    <button lq-momentary="Controls.button">Click Me</button>
+    <button lq-toggle="Controls.led">Toggle Me</button>
     <Component name="Component_1">
       <input type="text" ng-model="Controls.Control_3.String" />
-    </Component>
+    </Component><br />
+    <button lq-string="Controls.text" value="HDMI 1">Blu-Ray</button>
+    <button lq-string="Controls.text" value="HDMI 2">Apple TV</button>
+    <button lq-string="Controls.text" value="VGA">Rack PC</button>
+    <button lq-string="Controls.text" value="RGB 1">Foxtel</button>
   </body>
 </html>

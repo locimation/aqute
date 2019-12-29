@@ -91,6 +91,13 @@ The included stylesheet (`src/uci.css`) sets buttons to be light gray by default
 <button lq-momentary="Controls.my_other_button">Click!</button>
 ```
 
+A directive is also provided to allow buttons to be used as shortcuts to set the `String` value of a control. When the button is clicked, the `value` property will be applied. When the control's `String` value matches the element's `value` attribute, the `active` class will be applied and the button will (by default) illuminate.
+
+```html
+<!-- String buttons -->
+<button lq-string="Controls.text" value="HDMI 1">Blu-Ray</button>
+<button lq-string="Controls.text" value="HDMI 2">Apple TV</button>
+```
 
 ## Q-Sys Interaction
 
@@ -99,14 +106,14 @@ LQHtml connects to the core using the same websocket URL (http://&lt;core-ip&gt;
 Via this websocket, it uses the QRC (Q-Sys Remote Control) protocol documented in the [Q-Sys help file](https://q-syshelp.qsc.com/Content/External_Control/Q-Sys_Remote_Control/QRC.htm).
 
 Specifically, it creates two change groups:
-- LqCG for any named controls, and
-- LqCcg for any component controls.
+- **LqCG** for any named controls, and
+- **LqCcg** for any component controls.
 
 These are then automatically polled with an interval of 50ms.
 
 As such, the only methods implemented are:
-- ChangeGroup.AddComponentControl
-- ChangeGroup.AddControl
-- ChangeGroup.AutoPoll
-- Component.Set
-- Control.Set
+- **ChangeGroup.AddComponentControl**
+- **ChangeGroup.AddControl**
+- **ChangeGroup.AutoPoll**
+- **Component.Set**
+- **Control.Set**
