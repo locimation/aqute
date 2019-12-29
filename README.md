@@ -10,7 +10,10 @@ To begin with, simply clone this repository:
 git clone https://github.com/locimation/LQHtml.git
 ```
 
-(Note: for now, you'll need to change the core's IP in `lib/lq.js`.)
+In `src/index.html`, change the `core-ip` meta tag to the IP address of your core:
+```html
+<meta name="core-ip" content="ip.goes.here" />
+```
 
 Then run `npm install`, and `npm run-script serve`.
 
@@ -25,7 +28,7 @@ Edit `src/index.html`, `src/uci.js` and `src/uci.css` to suit your needs and UCI
 The intended behaviour is that you'll be able to run `npm build`, then copy the resulting .html file to any webserver of your choice for public access.
 
 Currently, it is possible to upload HTML files to the core's media directories and access them at http://&lt;core-ip&gt;/media/.
-Whilst this may change in future, it presently offers a way to host HTML-based UCI's on the core itself. 
+Whilst this may change in future, it presently offers a way to host HTML-based UCI's on the core itself.
 
 
 ## Architecture
