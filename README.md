@@ -91,7 +91,7 @@ The included stylesheet (`src/uci.css`) sets buttons to be light gray by default
 <button lq-momentary="Controls.my_other_button">Click!</button>
 ```
 
-A directive is also provided to allow buttons to be used as shortcuts to set the `String` value of a control. When the button is clicked, the `value` property will be applied. When the control's `String` value matches the element's `value` attribute, the `active` class will be applied and the button will (by default) illuminate.
+A directive is also provided to allow buttons to be used as shortcuts to set the `String` value of a control. When the button is clicked, the `value` property will be applied. When the control's `String` value matches the element's `value` attribute, the `active` class will be applied and the button will (by default) turn white.
 
 ```html
 <!-- String buttons -->
