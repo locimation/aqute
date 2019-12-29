@@ -55,12 +55,25 @@ This binding is bi-directional, so an HTML text-field will update the Q-Sys cont
 
 These controls are bound through lazy-loading, such that only the required controls are requested from the core.
 
+### Scoped Bindings
+
 A helper directive (`Component`) is provided for scoping nested bindings to a particular named component:
 ```html
 <Component name="my_component">
   <span ng-bind="Controls.text_control.String"></span>
 </Component>
 ```
+
+### URL Parameters
+
+URL parameters are also bound to the root scope under the `Properties` object, such that named components may be referenced dynamically.
+For example, to have the URL `/uci.html?room=foyer` access the `foyer` named component:
+```html
+<Component name="{{Properties.room}}">
+  <h1 ng-bind="Controls.room_name.String"></h1>
+</Component>
+```
+This allows many rooms to share a user interface.
 
 LQHtml also provides helper directives for bridging the logical gaps between Q-Sys controls and HTML entities. *These are a work in progress - documentation will follow as they develop.*
 

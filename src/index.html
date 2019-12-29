@@ -10,7 +10,7 @@
   <body>
     <h1 ng-bind="Controls.text.String"></h1>
     <button lq-active="Components.Component_1.Control_1.Value">Click Me</button>
-    <Component name="Component_1">
+    <Component name="{{Properties.comp}}">
       <input type="text" ng-model="Controls.Control_3.String" />
     </Component>
   </body>
