@@ -1,6 +1,6 @@
 # Aqute
 
-LQHtml is a library for building AngularJS user interfaces that control QSC's Q-Sys cores.
+Aqute is a library for building AngularJS user interfaces that control QSC's Q-Sys cores.
 
 
 ## Getting Started
@@ -9,7 +9,7 @@ LQHtml is a library for building AngularJS user interfaces that control QSC's Q-
 
 To begin with, simply clone this repository:
 ```
-git clone https://github.com/locimation/LQHtml.git
+git clone https://github.com/locimation/aqute.git
 ```
 
 In `src/index.html`, change the `core-ip` meta tag to the IP address of your core:
@@ -101,7 +101,7 @@ A directive is also provided to allow buttons to be used as shortcuts to set the
 
 ## Q-Sys Interaction
 
-LQHtml connects to the core using the same websocket URL (http://&lt;core-ip&gt;/qrc) as the built-in HTML5 UCI Viewer.
+Aqute connects to the core using the same websocket URL (http://&lt;core-ip&gt;/qrc) as the built-in HTML5 UCI Viewer.
 
 Via this websocket, it uses the QRC (Q-Sys Remote Control) protocol documented in the [Q-Sys help file](https://q-syshelp.qsc.com/Content/External_Control/Q-Sys_Remote_Control/QRC.htm).
 
