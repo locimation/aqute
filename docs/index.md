@@ -1,6 +1,6 @@
-> Aqute is a library for building AngularJS user interfaces that control QSC's Q-Sys cores.
+Aqute is a library for building AngularJS user interfaces that control QSC's Q-Sys cores.
 
-# Getting Started
+## Getting Started
 
 *Requirements: NodeJS w/ NPM*
 
