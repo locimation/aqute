@@ -1,4 +1,4 @@
-# LQHtml
+# Aqute
 
 LQHtml is a library for building AngularJS user interfaces that control QSC's Q-Sys cores.
 
