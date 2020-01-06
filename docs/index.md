@@ -1,9 +1,6 @@
-# Aqute
+> Aqute is a library for building AngularJS user interfaces that control QSC's Q-Sys cores.
 
-Aqute is a library for building AngularJS user interfaces that control QSC's Q-Sys cores.
-
-
-## Getting Started
+# Getting Started
 
 *Requirements: NodeJS w/ NPM*
 
@@ -24,7 +21,7 @@ You can now open http://localhost:1234/ in a browser and see the sample UCI.
 Edit `src/index.html`, `src/uci.js` and `src/uci.css` to suit your needs and UCI design.
 
 
-## Deployment
+# Deployment
 **Note:** The production deployment process is currently a work-in-progress.
 
 The intended behaviour is that you'll be able to run `npm build`, then copy the resulting .html file to any webserver of your choice.
@@ -34,7 +31,7 @@ Currently, it's possible to upload HTML files to a Q-Sys core's `media` director
 Whilst this may change in future, it presently offers a way to host HTML-based UCI's on the core itself.
 
 
-## Bindings
+# Bindings
 
 [Named controls](https://q-syshelp.qsc.com/Content/Schematic_Library/external_control.htm) and any controls belonging to [named components](https://training.qsc.com/mod/book/view.php?id=1178) are bound to the Angular root scope.
 
@@ -55,7 +52,7 @@ This binding is bi-directional, so an HTML text-field will update the Q-Sys cont
 
 These controls are bound through lazy-loading, such that only the required controls are requested from the core.
 
-### Scoped Bindings
+## Scoped Bindings
 
 A helper directive (`Component`) is provided for scoping nested bindings to a particular named component:
 ```html
@@ -64,7 +61,7 @@ A helper directive (`Component`) is provided for scoping nested bindings to a pa
 </Component>
 ```
 
-### URL Parameters
+## URL Parameters
 
 URL parameters are also bound to the root scope under the `Properties` object, such that named components may be referenced dynamically.
 For example, to have the URL `/uci.html?room=foyer` access the `foyer` named component:
@@ -75,7 +72,7 @@ For example, to have the URL `/uci.html?room=foyer` access the `foyer` named com
 ```
 This allows many rooms to share a user interface.
 
-### Button directives
+## Button directives
 
 HTML buttons are typically stateless, so a number of helper functions are provided to allow the buttons to have momentary or toggle behaviour.
 
@@ -99,7 +96,7 @@ A directive is also provided to allow buttons to be used as shortcuts to set the
 <button lq-string="Controls.text" value="HDMI 2">Apple TV</button>
 ```
 
-## Q-Sys Interaction
+# Q-Sys Interaction
 
 Aqute connects to the core using the same websocket URL (http://&lt;core-ip&gt;/qrc) as the built-in HTML5 UCI Viewer.
 
