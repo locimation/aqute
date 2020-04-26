@@ -2,22 +2,22 @@
 <html>
   <head>
     <title>My UCI</title>
-    <script src="../lib/lq.js"></script>
+    <script src="../lib/aqute.js"></script>
     <script src="uci.js"></script>
     <link rel="stylesheet" href="uci.css" />
     <meta name="core-ip" content="10.0.0.136" />
   </head>
   <body>
     <h1 ng-bind="Controls.text.String"></h1>
-    <button lq-momentary="Controls.button">Click Me</button>
-    <button lq-toggle="Controls.led">Toggle Me</button>
+    <button aq-momentary="Controls.button">Click Me</button>
+    <button aq-toggle="Controls.led">Toggle Me</button>
     <Component name="Component_1">
       <input type="text" ng-model="Controls.Control_3.String" />
     </Component><br />
-    <button lq-string="Controls.text" value="HDMI 1">Blu-Ray</button>
-    <button lq-string="Controls.text" value="HDMI 2">Apple TV</button>
-    <button lq-string="Controls.text" value="VGA">Rack PC</button>
-    <button lq-string="Controls.text" value="RGB 1">Foxtel</button><br />
+    <button aq-string="Controls.text" value="HDMI 1">Blu-Ray</button>
+    <button aq-string="Controls.text" value="HDMI 2">Apple TV</button>
+    <button aq-string="Controls.text" value="VGA">Rack PC</button>
+    <button aq-string="Controls.text" value="RGB 1">Foxtel</button><br />
     {{Components.Component_1.Control_4.Value}}<br />
     <input type="range" ng-model="Components.Component_1.Control_4.Position" step="0.01" min="0" max="1" />
   </body>

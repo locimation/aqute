@@ -1,6 +1,6 @@
-# LQHtml
+# Aqute
 
-LQHtml is a library for building AngularJS user interfaces that control QSC's Q-Sys cores.
+Aqute is a library for building AngularJS user interfaces that control QSC's Q-Sys cores.
 
 
 ## Getting Started
@@ -9,7 +9,7 @@ LQHtml is a library for building AngularJS user interfaces that control QSC's Q-
 
 To begin with, simply clone this repository:
 ```
-git clone https://github.com/locimation/LQHtml.git
+git clone https://github.com/locimation/aqute.git
 ```
 
 In `src/index.html`, change the `core-ip` meta tag to the IP address of your core:
@@ -85,29 +85,29 @@ The included stylesheet (`src/uci.css`) sets buttons to be light gray by default
 
 ```html
 <!-- Toggle button -->
-<button lq-toggle="Controls.my_button">Click Me</button>
+<button aq-toggle="Controls.my_button">Click Me</button>
 
 <!-- Momentary button -->
-<button lq-momentary="Controls.my_other_button">Click!</button>
+<button aq-momentary="Controls.my_other_button">Click!</button>
 ```
 
 A directive is also provided to allow buttons to be used as shortcuts to set the `String` value of a control. When the button is clicked, the `value` property will be applied. When the control's `String` value matches the element's `value` attribute, the `active` class will be applied and the button will (by default) turn white.
 
 ```html
 <!-- String buttons -->
-<button lq-string="Controls.text" value="HDMI 1">Blu-Ray</button>
-<button lq-string="Controls.text" value="HDMI 2">Apple TV</button>
+<button aq-string="Controls.text" value="HDMI 1">Blu-Ray</button>
+<button aq-string="Controls.text" value="HDMI 2">Apple TV</button>
 ```
 
 ## Q-Sys Interaction
 
-LQHtml connects to the core using the same websocket URL (http://&lt;core-ip&gt;/qrc) as the built-in HTML5 UCI Viewer.
+Aqute connects to the core using the same websocket URL (http://&lt;core-ip&gt;/qrc) as the built-in HTML5 UCI Viewer.
 
 Via this websocket, it uses the QRC (Q-Sys Remote Control) protocol documented in the [Q-Sys help file](https://q-syshelp.qsc.com/Content/External_Control/Q-Sys_Remote_Control/QRC.htm).
 
 Specifically, it creates two change groups:
-- **LqCG** for any named controls, and
-- **LqCcg** for any component controls.
+- **AqCG** for any named controls, and
+- **AqCcg** for any component controls.
 
 These are then automatically polled with an interval of 50ms.
 
