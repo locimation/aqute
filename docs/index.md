@@ -66,7 +66,7 @@ A helper directive (`Component`) is provided for scoping nested bindings to a pa
 URL parameters are also bound to the root scope under the `Properties` object, such that named components may be referenced dynamically.
 For example, to have the URL `/uci.html?room=foyer` access the `foyer` named component:
 ```html
-<Component name="{{{{Properties.room}}}}">
+<Component name="{{ {{Properties.room}}}}">
   <h1 ng-bind="Controls.room_name.String"></h1>
 </Component>
 ```
