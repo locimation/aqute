@@ -1,11 +1,11 @@
 {
-  "name": "lqhtml",
+  "name": "@locimation/aqute",
   "version": "1.0.0",
   "description": "Locimation's HTML UCI System for Q-Sys",
   "main": "src/index.html",
   "scripts": {
-    "build": "parcel build index.html --public-url .",
-    "serve": "parcel serve index.html --public-url ."
+    "build": "parcel build src/index.html",
+    "serve": "parcel serve src/index.html"
   },
   "author": "Michael Goodyear <michael@locimation.com>",
   "license": "MIT",
