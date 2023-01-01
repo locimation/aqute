@@ -10,7 +10,7 @@
   "author": "Michael Goodyear <michael@locimation.com>",
   "license": "MIT",
   "devDependencies": {
-    "parcel": "^1.12.4"
+    "parcel": "^2.8.2"
   },
   "dependencies": {
     "angular": "^1.7.9"
